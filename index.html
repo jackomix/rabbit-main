@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>rabbit</title>
+</head>
+<body>
+    <div class="info">
+        <h1 class="logo">rabbit</h1>
+        <button id="mainButton" onclick="buttonClicked()">jump</button>
+
+        <div id="topicContainer"></div>
+
+        <hr>
+    </div>
+
+    <div id="storyContainer"></div>
+
+    <div id="template" class="hidden">
+        <div class="item">
+            <div class="itemBox">
+                <h1 id="itemNameLabel">Item Name</h1>
+                <p id="itemDescription">Item Description</p>
+            </div>
+            <h1 class="transition">↑</h1>
+        </div>
+        <div class="topic">
+            <p id="topicLabel">Topic</p>
+            <div class="tallyWrapper">
+                <p id="topicTally">0</p>
+            </div>            
+        </div>
+    </div>
+    
+    
+    <script src="alea.min.js"></script>
+    <script src="rabbit.js"></script>
+</body>
+</html>
